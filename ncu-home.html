@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script type="text/javascript">
+function clickMe(){
+    var input =document.getElementById("inputId");
+    console.log(input.id);
+    console.log(input.type);
+    console.log(input.value);
+    alert(input.value);
+    
+}
+</script>
+</head>
+<body>
+    <style type="text/css">
+    span{
+        color:black;
+        font-size:30px;
+        font-weight:lighter;
+       
+    }
+    input{
+        border:1px solid #ccc;
+        padding: 10px 0px;
+        border-radius: 3px;
+        padding-left: 5px;
+        width:300px;
+        
+        
+    }
+    button{
+        width:300px;
+        height:40px;
+        color:white;
+        background-color: #007acc;
+        border-radius: 3px;
+        outline:none;
+        font-size: 17px;
+        text-align: center;
+        cursor: pointer;
+        font-weight: bold;
+        margin:0;
+        border-width: 0;
+    }
+    button:hover{
+        background-color: #006699;
+    }
+    
+
+
+    
+    </style>
+    <div style="text-align: center;margin-top: 150px;">
+<img style="-webkit-user-select: none;margin:auto;height: 120px;width: 120px;" src="https://pic1.zhimg.com/v2-53ef1a0a76ddd914364ad6854132685d_xl.jpg">
+</div>
+<h1 style="text-align: center;">登录</h1>
+    <label for="username"><span></span></label>
+    <p align="center">
+        <input type="text" placeholder="请输入学号" name="username" id="inputId" />
+    </p>
+    
+    <label for ="pass"><span></span></label>
+    <p align="center">
+        <input type="password" placeholder="请输入密码" name="pass" id="inputId"/> <br/>   </p>
+
+    <div style="text-align: center"><button onclick="clickMe('password','username')">Login</button> </div>   
+
+
+   
+
+</script>
+
+
+</body>
+</html>
